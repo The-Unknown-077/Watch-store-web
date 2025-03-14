@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+li{
+    list-style: none;
+}
+
+/* .for_background{
+    background: linear-gradient(175deg, rgba(56,54,56,1) 0%, rgba(11,11,11,1) 51%);
+} */
+
+
+.header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: .3s;
+    background: transparent;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    margin-bottom: 102px;
+}
+
+.navbar_collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.header.shrink{
+    box-shadow: 0 5px 5px #0001;
+    color: black;
+    backdrop-filter: blur(10px);
+}
+
+.header.shrink .navbar{
+    height: 80px;
+}
+
+
+
+.navbar_item{
+    transition: .3s;
+}
+
+.navbar_item:hover{
+    scale: 1.15;
+}
+
+.nav_icons{
+    transition: .4s;
+}
+
+.nav_icons:hover{
+    transform: scale(1.025)
+}
+
+.nav_icons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.navbar_link h3{
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: #8b8e99;
+}
+
+.menu_bar{
+    opacity: 0;
+}
+
+.drop_down{
+    position: absolute;
+    background:rgba(207, 207, 207, 0.721);
+    width: 150px;
+    padding: 10px 0;
+    line-height: 2;
+    transform: scaleY(0);
+    transition: .3s ease;
+    transform-origin: top;
+    border-radius: 0 15px 15px 15px;
+}
+.drop_down li{
+    transition: .3s ease;
+    color: black;
+}
+.drop_down li:hover{
+    padding: 0 10px;
+    cursor: pointer;
+    background: #babfc2;
+}
+.navbar_item:hover .drop_down{
+    transform: scaleY(1);
+}
+
+
+/* hero qsmi........................................... */
+
+.hero{
+    background: linear-gradient(175deg, rgba(56,54,56,1) 0%, rgba(11,11,11,1) 51%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: 160px;
+}
+
+.hero_context{
+    max-width: 457px;
+    padding-bottom: 200px;
+}
+
+.hero_img{
+    width: 50%;
+}
+
+.hero_wrapper{
+    display: flex;
+    gap: 164px;
+}
+
+.hero_title{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 125%;
+    color: #fff;
+}
+
+
+.hero_desc{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #8b8e99;
+    margin-bottom: 47px;
+    margin-top: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 15px;
+    padding: 8px 20px;
+    max-width: 300px;
+}
+.search input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #666;
+}
+.search button {
+    background: #3b5bfd;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 5;
+}
+.search button:hover {
+    background: #2f4dcf;
+}
+
+
+.blue-color {
+    color:blue;
+}
+
+
+/* brand cards qismi................................................. */
+
+.brands_card_wrapper{
+    margin-top: 773px;
+}
+
+.b_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 135px;
+}
+
+.b_card{
+    display: flex;
+    gap: 26px;
+    padding: 46px 41px;
+    background: #f6f6f6;
+    border-radius: 22px;
+}
+
+
+.b_card img{
+    transition: .4s;
+}
+
+.b_card img:hover{
+    scale: 1.05;
+}
+
+.b_c_context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.b_desc{
+    font-weight: 500;
+    font-size: 16px;
+    color: #8b8e99;
+    margin-top: 9px;
+}
+
+/* latest products qismi.......................................... */
+
+.latest_spoiler{
+    font-weight: 500;
+    text-align: center;
+    color: #3858d6;
+}
+
+.latest_title{
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.latest_context{
+    margin-bottom: 65px;
+}
+
+
+.latest_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 69px;
+}
+
+.image{
+    padding: 30px 41px;
+    background: #F6F6F6;
+    position: relative;
+}
+
+.image img{
+    transition: .4s;
+}
+
+.img_icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.image img:hover{
+    scale: 1.05;
+}
+
+.image:hover .img_icons{
+    opacity: 1;
+}
+
+.latest_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 49px;
+}
+
+.c_title{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.c_stars{
+    margin-bottom: 12px;
+}
+
+.c_price{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.c_price s{
+    color: #666;
+}
+
+
+.l_btn{
+    padding: 15px 60px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    background: #3b5bfd;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    transition: .4s;
+    margin-bottom: 135px;
+}
+
+.l_btn:hover{
+    background: #4d63d4;
+    scale: 1.05;
+}
+
+/* carousel qismi............................../........ */
+
+.car_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 47px;
+    margin-bottom: 135px;
+}
+
+.car_desc{
+    font-weight: 500;
+    font-size: 16px;
+    color: #8b8e99;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+/* last card qismi.............................................. */
+
+.last_card_wrapper{
+    background: #f6f6f6;
+    border-radius: 22px;
+}
+
+.last_card{
+    padding: 43px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.last_spoiler{
+    font-weight: 500;
+    font-size: 16px;
+    color: #8b8e99;
+    margin-bottom: 12px;
+}
+
+.last_img img{
+    transition: .4s;
+}
+
+.last_img img:hover{
+    scale: 1.05;
+}
+
+/* footer ............... */
+
+.f_context{
+    color: #fff;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #111;
+}

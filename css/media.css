@@ -1,0 +1,78 @@
+@media (max-width: 900px){
+    .container{
+        padding: 0 20px;
+    }
+    .hero_img{
+        width: 100%;
+        text-align: center;
+    }
+    .hero_wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .nav_icons{
+        display: none;
+    }
+    .b_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latest_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .car_cards{
+        grid-template-columns: 1fr;
+    }
+    .last_img{
+        width: 100%;
+    }
+    .last_card{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .container{
+        padding: 0 10px;
+    }
+    .navbar_collection{
+        display: none;
+    }
+    .menu_bar{
+        opacity: 1;
+    }
+    .hero_context{
+        max-width: 327px;
+        padding-bottom: 200px;
+    }
+    .b_cards{
+        grid-template-columns: auto;
+    }
+    .latest_cards{
+        grid-template-columns: auto;
+    }
+    .car_desc{
+        font-weight: 500;
+        font-size: 12px;
+        color: #8b8e99;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+    .last_card{
+        padding: 20px 10px;
+        gap: 20px;
+        flex-direction: column-reverse;
+    }
+    .last_img{
+        text-align: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .last_spoiler{
+        text-align: center;
+    }
+    .search {
+        padding: 8px 10px;
+        max-width: 400px;
+    }
+}
